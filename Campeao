@@ -1,0 +1,47 @@
+Criar classe campeao: Lol.Domain.Entities
+
+ - Id -> Guid
+ - Nome -> string
+ - Dano Físico -> int
+ - Poder de habilidade -> int 
+ - Armadura -> int
+ - Resistência mágica -> int
+ - Vida -> int
+ - Skill -> classe
+ - CampeaoBuilder
+
+Criar campeão controller: Lol.Controllers
+
+ - GET -> Recuperar lista de campões ou apenas um campeão específico
+ - POST -> Criar um campeão
+ - PUT -> Atualizar um campeão 
+ - DELETE -> Excluir um campeão
+
+Criar use case: Lol.Domain.UseCases
+
+ - Recuperar lista de campeões
+ - Recuperar campeão específico
+ - Criar um campeão
+ - Atualizar um campeão
+ - Excluir um campeão
+
+Criar um repository: Lol.Infra.Repositories
+ - Recuperar lista de campeões
+ - Recuperar campeão específico
+ - Criar um campeão
+ - Atualizar um campeão
+ - Excluir um campeão
+
+Criar um context: Lol.Infra.Context
+ - CampeaoModel
+ 
+Extras: Lol.Domain.Adapters/Factories
+ - Adapters:
+    - Response
+    - Request
+ - Factories:
+    - CampeaoEntity
+    - CampeaoModel
+    - CampeaoResponse
+
+   
